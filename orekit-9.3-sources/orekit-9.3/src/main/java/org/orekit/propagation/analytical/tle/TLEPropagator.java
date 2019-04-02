@@ -355,9 +355,9 @@ public abstract class TLEPropagator extends AbstractAnalyticalPropagator {
         final double x1mth2 = 1.0 - cosi0Sq;
         final double x7thm1 = 7.0 * cosi0Sq - 1.0;
 
-        if (e > (1 - 1e-6)) {
-            throw new OrekitException(OrekitMessages.TOO_LARGE_ECCENTRICITY_FOR_PROPAGATION_MODEL, e);
-        }
+     //   if (e > (1 - 1e-6)) {
+     //       throw new OrekitException(OrekitMessages.TOO_LARGE_ECCENTRICITY_FOR_PROPAGATION_MODEL, e);
+  //      }
 
         // Solve Kepler's' Equation.
         final double newtonRaphsonEpsilon = 1e-12;
